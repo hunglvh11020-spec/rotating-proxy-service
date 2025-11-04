@@ -1,0 +1,5 @@
+{
+  "name": "Rotating Proxy Key Generator",
+  "description": "A user-friendly tool to generate and manage keys for a rotating proxy service. Configure key lifetime, region, and other parameters to create custom proxy keys for your needs.",
+  "requestFramePermissions": []
+}
