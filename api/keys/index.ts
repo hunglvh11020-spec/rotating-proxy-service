@@ -23,7 +23,8 @@ async function handleGet(req: VercelRequest, res: VercelResponse) {
     try {
         const { data, error } = await supabase
             .from('proxy_keys')
-            .select('id, key, region, lifetime');
+            .select('id, key, region, lifetime')
+            .order('id', { ascending: false }); // Sort by ID descending to get newest first
 
         if (error) throw error;
         
